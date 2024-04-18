@@ -1,0 +1,100 @@
+:root{
+    --color-secondary: #373737;
+    --color-tertiary: #37373798;
+    --color-primary: #ffffff;
+    --color-four: aqua;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+    font-family: 'Press Start 2P';
+}
+
+body{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+#game-title{
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translate(-50%, 0);
+
+}
+
+.game {
+    width: 800px;
+    height: 200px;
+    border: 1px solid black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.character{
+    width: 20px;
+    height: 50px;
+    position: absolute;
+    bottom: 0 ;
+    
+}
+
+.block{
+    width: 20px;
+    height: 30px;
+    position: relative;
+    top: 170px;
+    left: 780px;
+    animation: block 2s infinite linear;
+}
+
+/* @keyframes jump {
+    0%{
+        top: 150px;
+    }
+    50% {
+        top: 100px;
+    }
+    100% {
+        top: 150px;
+    }
+} */
+
+@keyframes block {
+    0%{
+        left: 780px;
+    }
+    100%{
+        left: -40px;
+
+    }
+}
+
+
+.animate {
+
+    animation: jump .900s;
+
+}
+
+.block-type-1 {
+    background-color: #373737;
+}
+
+.block-type-2 {
+    background-color: aqua;
+
+}
+.character-type-1 {
+    background-color: #373737;
+}
+
+.character-type-2 {
+    background-color: aqua;
+
+}
